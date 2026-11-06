@@ -38,7 +38,8 @@
     display: flex;
     align-items: center;
     height: fit-content;
-    padding: $header-padding-block 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   :focus-visible {
@@ -55,11 +56,13 @@
   .navbar-header-items {
     display: none;
     flex-shrink: 1;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 
     @include media-breakpoint-up($breakpoint-sidebar-primary) {
       display: inherit;
       flex-grow: 1;
-      padding: 0 0 0 0.5rem;
+      padding-left: 0.5rem;
       flex-wrap: wrap;
       row-gap: 0.5rem;
     }
